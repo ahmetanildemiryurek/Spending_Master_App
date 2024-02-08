@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/currencyTypeTl"
+        android:title="Türk Lirası" />
+    <item
+        android:id="@+id/currencytypeDolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Dolar" />
+    <item
+        android:id="@+id/currencyTypeEuro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Euro" />
+    <item
+        android:id="@+id/currencytypeSterlin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Sterlin" />
+</menu>

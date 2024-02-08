@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/expencesListFragment">
+
+    <fragment
+        android:id="@+id/expencesListFragment"
+        android:name="com.example.spendingmaster.ui.listExpence.ExpenceListFragment"
+        android:label="fragment_expence_list"
+        tools:layout="@layout/fragment_expence_list">
+        <action
+            android:id="@+id/action_expencesListFragment_to_expencesDetailsFragment"
+            app:destination="@id/expencesDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/expencesDetailsFragment"
+        android:name="com.example.spendingmaster.ui.expenceDetails.ExpencesDetailsFragment"
+        android:label="expences_list_details"
+        tools:layout="@layout/expenses_details_design">
+        <argument
+            android:name="expenceNumber"
+            app:argType="integer" />
+    </fragment>
+</navigation>

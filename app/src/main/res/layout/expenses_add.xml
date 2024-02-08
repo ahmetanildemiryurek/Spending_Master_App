@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-95dp">
+
+    <EditText
+        android:id="@+id/expenseType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:hint="Harcama Türünü Giriniz"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/expenseDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:hint="Harcama Detayını Giriniz"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expenseType" />
+
+    <EditText
+        android:id="@+id/expensePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:hint="Harcamanın Fiyatını Giriniz"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/expenseDetail"
+        tools:layout_editor_absoluteX="101dp" />
+
+    <Button
+        android:id="@+id/currencyTypeSelector"
+        android:layout_width="130dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#2196F3"
+        android:text="@string/currencyTypeText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expensePrice" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="165dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="200dp"
+        android:backgroundTint="#4CAF50"
+        android:text="@string/saveButtonText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expensePrice"
+        app:layout_constraintVertical_bias="0.542" />
+</androidx.constraintlayout.widget.ConstraintLayout>

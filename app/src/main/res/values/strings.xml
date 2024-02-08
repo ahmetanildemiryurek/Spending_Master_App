@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Spending Master</string>
+    <string name="welcome">Hoşgeldin Çaylak!</string>
+    <string name="motion">Usta Olmaya Hazır Mısın 😎</string>
+    <string name="letsGoText">Hadi Başlayalım !</string>
+    <string name="spendingdetails">spendingDetails</string>
+    <string name="delete">Sil</string>
+    <string name="saveButtonText">KAYDET</string>
+    <string name="currencyTypeText">Para Birimi</string>
+</resources>
