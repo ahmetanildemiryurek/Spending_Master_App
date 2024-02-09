@@ -6,7 +6,7 @@
         android:id="@+id/currencyTypeTl"
         android:title="Türk Lirası" />
     <item
-        android:id="@+id/currencytypeDolar"
+        android:id="@+id/currencyTypeDolar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:title="Dolar" />
@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:title="Euro" />
     <item
-        android:id="@+id/currencytypeSterlin"
+        android:id="@+id/currencyTypeSterlin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:title="Sterlin" />

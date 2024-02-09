@@ -26,7 +26,7 @@
             app:layout_constraintGuide_end="381dp" />
 
         <TextView
-            android:id="@+id/spendingDetails"
+            android:id="@+id/expenseName"
             android:layout_width="184dp"
             android:layout_height="20dp"
             android:layout_marginHorizontal="10dp"
@@ -44,7 +44,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/spendingDetails"
+            android:id="@+id/expenseDetails"
             android:layout_width="342dp"
             android:layout_height="111dp"
             android:layout_marginHorizontal="10dp"
@@ -71,7 +71,7 @@
             tools:layout_editor_absoluteY="168dp" />
 
         <TextView
-            android:id="@+id/expensesPrice"
+            android:id="@+id/expensePrice"
             android:layout_width="77dp"
             android:layout_height="15dp"
             android:layout_marginStart="12dp"
@@ -100,7 +100,7 @@
             app:layout_constraintVertical_bias="0.504" />
 
         <TextView
-            android:id="@+id/currency"
+            android:id="@+id/currencyType"
             android:layout_width="19dp"
             android:layout_height="15dp"
             android:layout_marginStart="96dp"

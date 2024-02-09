@@ -3,24 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/expencesListFragment">
+    app:startDestination="@id/expensesListFragment">
 
     <fragment
-        android:id="@+id/expencesListFragment"
-        android:name="com.example.spendingmaster.ui.listExpence.ExpenceListFragment"
-        android:label="fragment_expence_list"
-        tools:layout="@layout/fragment_expence_list">
+        android:id="@+id/expensesListFragment"
+        android:name="com.example.spendingmaster.ui.listExpense.ExpenseListFragment"
+        android:label="fragment_expense_list"
+        tools:layout="@layout/fragment_expense_list">
         <action
-            android:id="@+id/action_expencesListFragment_to_expencesDetailsFragment"
-            app:destination="@id/expencesDetailsFragment" />
+            android:id="@+id/action_expensesListFragment_to_expensesDetailsFragment"
+            app:destination="@id/expensesDetailsFragment" />
     </fragment>
     <fragment
-        android:id="@+id/expencesDetailsFragment"
-        android:name="com.example.spendingmaster.ui.expenceDetails.ExpencesDetailsFragment"
-        android:label="expences_list_details"
+        android:id="@+id/expensesDetailsFragment"
+        android:name="com.example.spendingmaster.ui.expenseDetails.ExpensesDetailsFragment"
+        android:label="expenses_list_details"
         tools:layout="@layout/expenses_details_design">
         <argument
-            android:name="expenceNumber"
+            android:name="expenses_id"
             app:argType="integer" />
     </fragment>
 </navigation>
