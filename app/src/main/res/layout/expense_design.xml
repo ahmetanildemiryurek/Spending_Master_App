@@ -7,9 +7,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:foreground="?android:attr/selectableItemBackground">
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/dataRoot"
+        android:id="@+id/expenseListConstraint"
         android:layout_width="match_parent"
         android:layout_height="130dp"
         android:layout_marginBottom="25dp"
@@ -49,7 +54,7 @@
             android:layout_height="15dp"
             android:layout_marginStart="144dp"
             android:src="@drawable/price_icon"
-            app:layout_constraintEnd_toStartOf="@+id/expensePrice"
+            app:layout_constraintEnd_toStartOf="@+id/expenseDetailsPrice"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="93dp" />
@@ -83,7 +88,7 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <TextView
-            android:id="@+id/expenceNumber"
+            android:id="@+id/expenseNumber"
             android:layout_width="26dp"
             android:layout_height="23dp"
             android:layout_marginStart="4dp"
@@ -97,13 +102,15 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.5" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/imgRoot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@id/dataRoot"
-        app:layout_constraintStart_toStartOf="@id/dataRoot"
+        app:layout_constraintBottom_toBottomOf="@id/cardView"
+        app:layout_constraintStart_toStartOf="@id/cardView"
         android:layout_marginBottom="20dp"
         android:layout_marginStart="20dp">
 

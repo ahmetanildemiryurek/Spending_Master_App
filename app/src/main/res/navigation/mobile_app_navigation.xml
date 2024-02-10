@@ -3,24 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/expensesListFragment">
+    app:startDestination="@id/expenseListFragment">
 
     <fragment
-        android:id="@+id/expensesListFragment"
+        android:id="@+id/expenseListFragment"
         android:name="com.example.spendingmaster.ui.listExpense.ExpenseListFragment"
         android:label="fragment_expense_list"
         tools:layout="@layout/fragment_expense_list">
         <action
-            android:id="@+id/action_expensesListFragment_to_expensesDetailsFragment"
-            app:destination="@id/expensesDetailsFragment" />
+            android:id="@+id/action_expenseListFragment_to_expenseDetailsFragment"
+            app:destination="@id/expenseDetailsFragment" />
     </fragment>
     <fragment
-        android:id="@+id/expensesDetailsFragment"
-        android:name="com.example.spendingmaster.ui.expenseDetails.ExpensesDetailsFragment"
-        android:label="expenses_list_details"
-        tools:layout="@layout/expenses_details_design">
+        android:id="@+id/expenseDetailsFragment"
+        android:name="com.example.spendingmaster.ui.expensedetails.ExpenseDetailsFragment"
+        android:label="movie_list_details"
+        tools:layout="@layout/expense_details_design">
         <argument
-            android:name="expenses_id"
+            android:name="expense_id"
             app:argType="integer" />
     </fragment>
 </navigation>

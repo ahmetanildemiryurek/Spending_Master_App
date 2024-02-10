@@ -3,11 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.spendingmaster.ui.listExpense.ExpenseListFragment">
+    tools:context=".ui.listExpense.ExpenseListFragment">
 
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/onBoardCardView"
+        android:id="@+id/expenseListCardView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
